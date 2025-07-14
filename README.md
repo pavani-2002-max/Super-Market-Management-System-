@@ -1,7 +1,13 @@
 # Super-Market-Management-System-
 In this project, we will develop a Supermarket Management System designed as a three-tier application.  
 
-Front end: UI is written in HTML/CSS/Javascript/Bootstrap Backend: Python and Flask Database: mysql
+**Front end**: UI is written in HTML/CSS/Javascript/Bootstrap 
+
+**Backend**: Python and Flask
+
+**Database**: mysql
+
+
 
 The Grocery Management System we developed is functional. However, after releasing it to users, we received the following feedback. Your task is to address this feedback and implement the suggested features in the application.
 
