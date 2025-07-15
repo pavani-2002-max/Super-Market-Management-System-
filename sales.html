@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales Management</title>
+  <link rel="stylesheet" href="sales.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="dashbord.html" class="back-button"><b>Back to Dashboard </b></a>
+      <h1>Sales Management</h1>
+      <p>Track and record daily sales</p>
+    </header>
+
+    <!-- New Sale Form -->
+    <section class="form-section">
+      <h2>Record New Sale</h2>
+      <form id="salesForm">
+        <input type="text" placeholder="Item Name" required />
+        <input type="number" placeholder="Quantity Sold" required />
+        <input type="number" placeholder="Total Price ($)" required />
+        <input type="date" required />
+        <button type="submit">Add Sale</button>
+      </form>
+    </section>
+
+    <!-- Sales Records -->
+    <section class="table-section">
+      <h2>Sales Records</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Total ($)</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bananas</td>
+            <td>30</td>
+            <td>45.00</td>
+            <td>2025-04-22</td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Bread</td>
+            <td>12</td>
+            <td>24.00</td>
+            <td>2025-04-22</td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
