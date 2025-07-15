@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orders Management</title>
+  <link rel="stylesheet" href="orders.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="dashbord.html" class="back-button"><b>Back to Dashboard </b></a>
+      <h1>Orders Management</h1>
+      <p>Manage customer orders efficiently</p>
+    </header>
+
+    <!-- Order Form -->
+    <section class="form-section">
+      <h2>Place New Order</h2>
+      <form id="orderForm">
+        <input type="text" placeholder="Customer Name" required />
+        <input type="text" placeholder="Item Ordered" required />
+        <input type="number" placeholder="Quantity" required />
+        <input type="date" required />
+        <button type="submit">Add Order</button>
+      </form>
+    </section>
+
+    <!-- Orders Table -->
+    <section class="table-section">
+      <h2>Order List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ali Khan</td>
+            <td>Rice</td>
+            <td>10</td>
+            <td>2025-04-22</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="mark">Mark as Completed</button></td>
+          </tr>
+          <tr>
+            <td>Sara Malik</td>
+            <td>Sugar</td>
+            <td>5</td>
+            <td>2025-04-21</td>
+            <td><span class="status completed">Completed</span></td>
+            <td><button class="mark" disabled>Done</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
