@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Management</title>
+  <link rel="stylesheet" href="inventory.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Inventory Management</h1>
+      <a href="dashbord.html" class="back-button"><b>Back to Dashboard </b></a>
+    </header>
+
+    <!-- Add Item Form -->
+    <section class="form-section">
+      <h2>Add New Item</h2>
+      <form id="addForm">
+        <input type="text" placeholder="Item Name" required />
+        <input type="number" placeholder="Quantity" required />
+        <input type="number" placeholder="Price (₹)" required />
+        <button type="submit">Add Item</button>
+      </form>
+    </section>
+
+    <!-- Inventory Table -->
+    <section class="table-section">
+      <h2>Inventory List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price ($)</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tomatoes</td>
+            <td>150</td>
+            <td>1.50</td>
+            <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Milk</td>
+            <td>60</td>
+            <td>2.00</td>
+            <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+<script src="scripts.js"></script>
+</html>
