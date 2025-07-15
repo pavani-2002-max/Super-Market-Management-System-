@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Management</title>
+  <link rel="stylesheet" href="customers.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="dashbord.html" class="back-button"><b>Back to Dashboard </b></a>
+      <h1>Customer Management</h1>
+      <p>View and manage registered customers</p>
+    </header>
+
+    <!-- Add New Customer Form -->
+    <section class="form-section">
+      <h2>Add Customer</h2>
+      <form id="customerForm">
+        <input type="text" placeholder="Customer Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Phone Number" required />
+        <button type="submit">Add Customer</button>
+      </form>
+    </section>
+
+    <!-- Customers Table -->
+    <section class="table-section">
+      <h2>Customer List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ayesha Tariq</td>
+            <td>ayesha@example.com</td>
+            <td>0321-1234567</td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Usman Ali</td>
+            <td>usman@gmail.com</td>
+            <td>0300-7654321</td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
