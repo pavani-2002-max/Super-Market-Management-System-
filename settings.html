@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Settings</h1>
+      <p>Manage your account and preferences</p>
+      <a href="dashbord.html" class="back-button"><b>Back to Dashboard </b></a>
+    </header>
+
+    <!-- Profile Info -->
+    <section class="settings-section">
+      <h2>Profile Information</h2>
+      <form>
+        <input type="text" placeholder="Full Name" value="John Doe" />
+        <input type="email" placeholder="Email Address" value="john@example.com" />
+        <input type="text" placeholder="Phone Number" value="0300-1234567" />
+        <button type="submit">Update Profile</button>
+      </form>
+    </section>
+
+    <!-- Change Password -->
+    <section class="settings-section">
+      <h2>Change Password</h2>
+      <form>
+        <input type="password" placeholder="Current Password" />
+        <input type="password" placeholder="New Password" />
+        <input type="password" placeholder="Confirm New Password" />
+        <button type="submit">Change Password</button>
+      </form>
+    </section>
+
+    <!-- Preferences -->
+    <section class="settings-section">
+      <h2>Notification Preferences</h2>
+      <label>
+        <input type="checkbox" checked />
+        Receive email notifications
+      </label><br/>
+      <label>
+        <input type="checkbox" />
+        Receive SMS alerts
+      </label><br/>
+      <label>
+        <input type="checkbox" />
+        Enable system notifications
+      </label>
+    </section>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
